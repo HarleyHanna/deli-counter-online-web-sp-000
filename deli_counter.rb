@@ -33,7 +33,7 @@ def now_serving(array)
     customer = array[0].to_s
     array.shift
     "Currently serving #{customer}."
-  if array.length == 0
+  elsif array.length == 0
     "There is nobody waiting to be served!"
   end
 end
